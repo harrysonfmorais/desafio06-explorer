@@ -1,0 +1,140 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  line-height: 62.5%;
+}
+
+body {
+  font-family: 'Staatliches', sans-serif;
+  font-weight: 400;
+}
+
+.page {
+  width: 38.4rem;
+  margin: 0 auto;
+}
+
+header {
+  height: 27.9rem;
+  margin: 0 auto;
+  background: #8E9AAF;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+header img {
+  height: 13.7rem;
+
+  margin-bottom: 4.0rem;
+
+  filter: drop-shadow(0px 6px 6px rgba(0, 0, 0, 0.25));
+}
+
+h1 {
+  font-size: 4rem;
+  line-height: 3.4rem;
+  letter-spacing: 0.05em;
+  color: #FFFFFF;
+  text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.25);
+
+  width: 38.4rem;
+  height: 4.9rem;
+
+  background: #CBC0D3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+main {
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3.0rem;
+
+  margin: 0 auto;
+  padding: 1.4rem 3.2rem 6rem;
+  background: #EFF1FF;
+}
+
+main p {
+  width: 30.5rem;
+  height: 7.5rem;
+  margin: 1.4rem 4rem 6rem;
+
+  font-family: 'Palanquin', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 1.5rem;
+
+  color: #23053A;
+}
+
+.card {
+  position: relative;
+}
+
+.card img {
+  width: 32rem;
+
+  animation: downtop 2000ms backwards;
+}
+
+.card span {
+  position: absolute;
+  top: 2rem;
+  right: 4rem;
+
+  font-family: 'Staatliches', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.0rem;
+  line-height: 3.4rem;
+
+  letter-spacing: 0.5px;
+
+  color: #4A4E69;
+  background: #FEEAFA;
+  border-radius: 2.0rem;
+  width: 11.2rem;
+  height: 3.5rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  animation: topdown 2500ms backwards;
+}
+
+@keyframes topdown {
+  0% {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes downtop {
+  0% {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
